@@ -1,6 +1,5 @@
 abstract class Monster {
 
-
     private String name;
     private int attack;
     private int life = 40;
@@ -44,6 +43,12 @@ abstract class Monster {
         this.type = type;
     }
 
+    /**
+     * Méthode qui permet à monster, d'en attaquer un autre.
+     * 
+     * @param opponent Instance de la classe monster qui est attaqué
+     * @return Si l'opposant est ko ou pas.
+     */
     public abstract boolean attack(Monster opponent);
 
     public boolean isKO() {
